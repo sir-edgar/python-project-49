@@ -8,7 +8,7 @@ build:
 	poetry build
 
 publish:
-	poetry publish --dry-ru
+	poetry publish --dry-run
 	n
 package-install:
 	python3 -m pip install --user dist/*.whl
