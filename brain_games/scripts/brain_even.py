@@ -42,6 +42,13 @@ def even_game():
             points = 0
             print("'yes' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, {name}!")
     print(f'Congratulations, {username}!')
+
+    def main():
+        welcome_user()
+        even_game()
+
+    if __name__ == '__main__':
+        main()
 #is_even(random_int())
 #print(is_even(12))
 welcome_user()
