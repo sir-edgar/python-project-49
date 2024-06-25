@@ -1,5 +1,5 @@
-def game():
-    welcome()
-    what_you_need_to_do()
-    question()
-    correct_or_not()
+from brain_games.cli import welcome_user
+
+
+
+name = welcome_user()
