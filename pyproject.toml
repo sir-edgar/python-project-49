@@ -1,16 +1,22 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Timur Vitrov <edgar.sir@yandex.ru>"]
+description = "Brain games project for hexlet"
+authors = ["sir_edgar  <edgar.sir@yandex.ru>"]
 readme = "README.md"
-packages = [
-  { include = "brain_games" },
+repository = "https://github.com/sir-edgar/python-project-49"
+packages = [{include = "brain_games"}]
+classifiers = [
+    "Natural Language :: English",
+    "Programming Language :: Python :: ^3.12",
 ]
+
 
 [tool.poetry.dependencies]
 python = "^3.12"
 prompt = "^0.4.1"
+pip = "^24.1"
+flake8 = "^7.1.0"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"

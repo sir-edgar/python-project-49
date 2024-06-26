@@ -28,6 +28,17 @@ files = [
 ]
 
 [[package]]
+name = "pip"
+version = "24.1"
+description = "The PyPA recommended tool for installing Python packages."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pip-24.1-py3-none-any.whl", hash = "sha256:a775837439bf5da2c1a0c2fa43d5744854497c689ddbd9344cf3ea6d00598540"},
+    {file = "pip-24.1.tar.gz", hash = "sha256:bdae551038c0ce6a83030b4aedef27fc95f0daa683593fea22fa05e55ed8e317"},
+]
+
+[[package]]
 name = "prompt"
 version = "0.4.1"
 description = "Library for prompting input on the command line."
@@ -63,4 +74,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "39e636b1472663cf8efcd67aace9a49b3d66a3ae303276954c872bff7dfa6afe"
+content-hash = "c263670987490e4afc0391b24baf89bbbb22874d7d569c113db4213d89769950"
