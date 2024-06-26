@@ -14,14 +14,3 @@ def task():
         correct_answer = 'no'
 
     return correct_answer, question
-
-
-
-
-
-
-
-
-
-
-

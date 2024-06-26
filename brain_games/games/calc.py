@@ -1,7 +1,7 @@
 from random import randint
 
 
-rules = ("What is the result of the expression?")
+rules = "What is the result of the expression?"
 
 
 def task():
@@ -25,4 +25,3 @@ def task():
         correct_answer = eval(multiplication)
 
     return correct_answer, question
-

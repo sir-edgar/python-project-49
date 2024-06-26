@@ -26,7 +26,9 @@ def universal_engine(game):
             print('Correct!')
 
         else:
-            print(f"'{users_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'. \nLet's try again, {name}!")
+            print(f"'{users_answer}' is wrong answer ;(.\
+            Correct answer was '{correct_answer}'.\
+             \nLet's try again, {name}!")
             return
 
     print(f'Congratulations, {name}!')

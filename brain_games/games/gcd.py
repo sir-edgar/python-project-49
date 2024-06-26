@@ -19,5 +19,3 @@ def task():
 
     correct_answer = a + b
     return correct_answer, question
-
-
