@@ -1,12 +1,12 @@
-import random
+from random import randint
 
 
 rules = "Find the greatest common divisor of given numbers."
 
 
 def task():
-    a = random.randint(5, 50)
-    b = random.randint(5, 50)
+    a = randint(5, 50)
+    b = randint(5, 50)
     question = (f'{a} {b}')
 
     while a != 0 and b != 0:

@@ -1,13 +1,13 @@
-import random
+from random import randint
 
 
 rules = ("What is the result of the expression?")
 
 
 def task():
-    r_int = random.randint(1, 3)
-    a = random.randint(1, 5)
-    b = random.randint(1, 5)
+    r_int = randint(1, 3)
+    a = randint(1, 5)
+    b = randint(1, 5)
     plus = f'{a} + {b}'
     multiplication = f'{a} * {b}'
     minus = f'{a} - {b}'
