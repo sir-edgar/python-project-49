@@ -1,22 +1,28 @@
 import random
 
 
-def question_calc():
-    global answer
-    randomaizer = random.randint(1, 3)
-    first_number = random.randint(1, 5)
-    second_number = random.randint(1, 5)
-    plus = f'{first_number} + {second_number}'
-    multiplication = f'{first_number} * {second_number}'
-    minus = f'{first_number} - {second_number}'
-    if randomaizer == 1:
-        print(f'Question: {plus}')
-        answer = eval(plus)
-    elif randomaizer == 2:
-        print(f'Question: {minus}')
-        answer = eval(minus)
-    else:
-        print(f'Question: {multiplication}')
-        answer = eval(multiplication)
+rules = ("What is the result of the expression?")
 
+
+def task():
+    r_int = random.randint(1, 3)
+    a = random.randint(1, 5)
+    b = random.randint(1, 5)
+    plus = f'{a} + {b}'
+    multiplication = f'{a} * {b}'
+    minus = f'{a} - {b}'
+
+    if r_int == 1:
+        question = plus
+        correct_answer = eval(plus)
+
+    elif r_int == 2:
+        question = minus
+        correct_answer = eval(minus)
+
+    else:
+        question = multiplication
+        correct_answer = eval(multiplication)
+
+    return correct_answer, question
 

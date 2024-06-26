@@ -21,7 +21,7 @@ def universal_engine(game):
         print(f'Question: {question}')
         users_answer = input('Your answer: ')
 
-        if correct_answer == users_answer:
+        if str(correct_answer) == users_answer:
             counter += 1
             print('Correct!')
 
