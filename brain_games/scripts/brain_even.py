@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.games.even_or_not import even_game
+from brain_games.games import even
+from brain_games.engine import universal_engine
 
 
 def main():
-    even_game()
+    universal_engine(even)
+
 
 if __name__ == '__main__':
     main()
