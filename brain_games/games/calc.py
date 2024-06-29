@@ -21,7 +21,7 @@ def calculate_expression(operator, num_a, num_b):
     return correct_answer, question
 
 
-def get_answer_and_question():
+def get_question_and_answer():
     """This function performs the 'calculate_expression' function,
     and then transmits variables - correct_answer and question."""
 
