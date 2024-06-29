@@ -1,19 +1,35 @@
 from random import randint
 from random import choice
 
+
 RULES = "What is the result of the expression?"
+
+
+def calculate(operator, num_a, num_b):
+    question = f'{num_a} {operator} {num_b}'
+    if operator == '+':
+        correct_answer = num_a + num_b
+    elif operator == '-':
+        correct_answer = num_a - num_b
+    else:
+        correct_answer = num_a * num_b
+    return correct_answer, question
 
 
 def get_answer_and_question():
     frst_num = randint(1, 10)
     sec_num = randint(1, 10)
     rand_operator = choice(['+', '-', '*'])
-    question = f'{frst_num} {rand_operator} {sec_num}'
-    if rand_operator == '+':
-        correct_answer = frst_num + sec_num
-    elif rand_operator == '-':
-        correct_answer = frst_num - sec_num
-    else:
-        correct_answer = frst_num * sec_num
+    correct_answer, question = calculate_exam(rand_operator, frst_num, sec_num)
     return correct_answer, question
-    
+
+
+def calculate_exam(operator, num_a, num_b):
+    question = f'{num_a} {operator} {num_b}'
+    if operator == '+':
+        correct_answer = num_a + num_b
+    elif operator == '-':
+        correct_answer = num_a - num_b
+    else:
+        correct_answer = num_a * num_b
+    return correct_answer, question
