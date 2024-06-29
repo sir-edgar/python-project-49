@@ -11,9 +11,9 @@ def welcome_user():
     return name
 
 
-def universal_engine(game):
+def start_game(game):
     name = welcome_user()
-    print(game.rules)
+    print(game.RULES)
     counter = 0
 
     while counter < POINTS_FOR_WIN:

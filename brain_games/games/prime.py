@@ -1,10 +1,10 @@
 from random import randint
 
 
-rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def task():
+def get_question_and_answer():
     question = randint(1, 100)
     num = question
     if num > 1:

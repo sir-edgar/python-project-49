@@ -1,27 +1,19 @@
 from random import randint
+from random import choice
+
+RULES = "What is the result of the expression?"
 
 
-rules = "What is the result of the expression?"
-
-
-def task():
-    r_int = randint(1, 3)
-    a = randint(1, 5)
-    b = randint(1, 5)
-    plus = f'{a} + {b}'
-    multiplication = f'{a} * {b}'
-    minus = f'{a} - {b}'
-
-    if r_int == 1:
-        question = plus
-        correct_answer = eval(plus)
-
-    elif r_int == 2:
-        question = minus
-        correct_answer = eval(minus)
-
+def get_answer_and_question():
+    frst_num = randint(1, 10)
+    sec_num = randint(1, 10)
+    rand_operator = choice(['+', '-', '*'])
+    question = f'{frst_num} {rand_operator} {sec_num}'
+    if rand_operator == '+':
+        correct_answer = frst_num + sec_num
+    elif rand_operator == '-':
+        correct_answer = frst_num - sec_num
     else:
-        question = multiplication
-        correct_answer = eval(multiplication)
-
+        correct_answer = frst_num * sec_num
     return correct_answer, question
+    

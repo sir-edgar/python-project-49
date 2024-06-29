@@ -1,10 +1,10 @@
 from random import randint
 
 
-rules = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def task():
+def get_question_and_answer():
     question = randint(1, 100)
 
     if question % 2 == 0:

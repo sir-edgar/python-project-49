@@ -1,10 +1,10 @@
 from random import randint
 
 
-rules = "Find the greatest common divisor of given numbers."
+RULES = "Find the greatest common divisor of given numbers."
 
 
-def task():
+def get_question_and_answer():
     a = randint(5, 50)
     b = randint(5, 50)
     question = (f'{a} {b}')

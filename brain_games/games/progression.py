@@ -1,10 +1,10 @@
 from random import randint
 
 
-rules = "What number is missing in the progression?"
+RULES = "What number is missing in the progression?"
 
 
-def task():
+def get_question_and_answer():
     i = 0
     a = randint(1, 50)
     b = randint(1, 5)
