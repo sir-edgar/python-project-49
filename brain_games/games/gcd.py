@@ -5,9 +5,11 @@ RULES = "Find the greatest common divisor of given numbers."
 
 
 def is_gcd(num1, num2):
-    """The function gets two numbers as arguments, then finds the largest common divisor.
-     It will create a 'question' variable from the arguments and an 'answer' variable from the calculations.
-     When the function is called, these variables are returned."""
+    """The function gets two numbers as arguments,
+    then finds the largest common divisor.
+    It will create a 'question' variable from the
+    arguments and an 'answer' variable from the calculations.
+    When the function is called, these variables are returned."""
 
     question = f'{num1} {num2}'
     while num1 != 0 and num2 != 0:

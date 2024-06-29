@@ -6,7 +6,8 @@ RULES = "What number is missing in the progression?"
 
 def make_progression(a, b):
     """This function creates a progression where one number is skipped.
-    Write the missing number to the variable 'correct_answer', and the progression to the variable 'question'"""
+    Write the missing number to the variable 'correct_answer',
+    and the progression to the variable 'question'"""
 
     i = 0
     index_missing_number = randint(1, 10)
@@ -25,7 +26,8 @@ def make_progression(a, b):
 
 def get_question_and_answer():
     """This function calls the 'make progress' function,
-    passing arguments from its variables to it. Then returns the variables - 'correct_answer' and 'question'"""
+    passing arguments from its variables to it.
+    Then returns the variables - 'correct_answer' and 'question'"""
 
     first_number = randint(1, 50)
     second_number = randint(1, 5)
