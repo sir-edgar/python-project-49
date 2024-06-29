@@ -20,13 +20,13 @@ def start_game(game):
     and 'question' from it. Then you are asked to enter a response from the user,
     after which the received data is checked against the correct answer.
     The function also tells you whether the user gave the correct answer or not."""
-    
+
     name = welcome_user()
     print(game.RULES)
     counter = 0
 
     while counter < POINTS_FOR_WIN:
-        correct_answer, question = game.task()
+        correct_answer, question = game.get_question_and_answer()
         print(f'Question: {question}')
         users_answer = input('Your answer: ')
 
