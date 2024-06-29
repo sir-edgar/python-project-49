@@ -5,6 +5,9 @@ POINTS_FOR_WIN = 3
 
 
 def welcome_user():
+    """The function asks for a name and prints several lines.
+    Then she returns variable 'name'"""
+
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
@@ -12,6 +15,12 @@ def welcome_user():
 
 
 def start_game(game):
+    """This function calls the 'welcome_user' function and prints the 'RULES' variable.
+    As an argument, she gets a module with game logic to write the variables 'correct_answer'
+    and 'question' from it. Then you are asked to enter a response from the user,
+    after which the received data is checked against the correct answer.
+    The function also tells you whether the user gave the correct answer or not."""
+    
     name = welcome_user()
     print(game.RULES)
     counter = 0
