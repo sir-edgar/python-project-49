@@ -26,7 +26,6 @@ def get_question_and_answer():
 
     first_num = randint(5, 50)
     second_num = randint(5, 50)
-    correct_answer = is_gcd(first_num, second_num)
+    correct_answer = get_gcd(first_num, second_num)
     question = f'{first_num} {second_num}'
     return correct_answer, question
-

@@ -27,7 +27,7 @@ def get_question_and_answer():
     frst_num = randint(1, 10)
     sec_num = randint(1, 10)
     rand_operator = choice(['+', '-', '*'])
-    correct_answer = (calculate_expression
-                                (rand_operator, frst_num, sec_num))
+    correct_answer = \
+        (calculate_expression(rand_operator, frst_num, sec_num))
     question = f'{frst_num} {rand_operator} {sec_num}'
     return correct_answer, question
