@@ -9,7 +9,7 @@ def is_prime(num):
      then checks if it is a prime number or not. Returns a Boolean"""
 
     for n in range(2, int(num ** 0.5) + 1):
-        if num % n == 0:
+        if num % n == 0 or num == 1:
             return False
     return True
 
