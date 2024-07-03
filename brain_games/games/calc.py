@@ -6,7 +6,7 @@ RULES = "What is the result of the expression?"
 
 
 def calculate_expression(operator, num_a, num_b):
-    """This function get three arguments: two numbers and an operator.
+    """She gets three arguments: two numbers and an operator.
     This function then performs simple mathematical calculations with
     the resulting data. At the output, we get an answer
     that will be needed in the next function."""
